@@ -1,4 +1,4 @@
-package com.github.flipzeus;
+package com.github.app;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
