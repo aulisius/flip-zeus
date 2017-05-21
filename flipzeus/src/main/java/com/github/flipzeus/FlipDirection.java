@@ -5,6 +5,6 @@ package com.github.flipzeus;
  */
 
 public enum FlipDirection {
-    Vertical,
-    Horizontal
+    VERTICAL,
+    HORIZONTAL
 }
