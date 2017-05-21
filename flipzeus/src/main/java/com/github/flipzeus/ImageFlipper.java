@@ -18,7 +18,17 @@ public class ImageFlipper {
     }
 
     private static Bitmap flipVertical(Bitmap input) {
-        return input;
+        Matrix matrix = new Matrix();
+        matrix.postScale(1, -1, input.getWidth()/2, input.getHeight()/2);
+        return Bitmap.createBitmap(
+                input,
+                0,
+                0,
+                input.getWidth(),
+                input.getHeight(),
+                matrix,
+                false
+        );
     }
 
     private static Bitmap flipHorizontal(Bitmap input) {
