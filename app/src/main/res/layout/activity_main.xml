@@ -16,6 +16,7 @@
 
     <ImageView
         android:id="@+id/vertical"
+        android:src="@mipmap/ic_launcher"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
@@ -27,6 +28,7 @@
 
     <ImageView
         android:id="@+id/horizontal"
+        android:src="@mipmap/ic_launcher"
         android:layout_centerVertical="true"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"

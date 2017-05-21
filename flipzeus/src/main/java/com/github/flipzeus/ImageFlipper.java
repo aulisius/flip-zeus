@@ -1,9 +1,26 @@
 package com.github.flipzeus;
 
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.widget.ImageView;
 
 public class ImageFlipper {
+
+    public static void flip(ImageView imageView, FlipDirection flipDirection) {
+        Drawable drawable = flip(imageView.getDrawable(), flipDirection);
+        imageView.setImageDrawable(drawable);
+    }
+
+    public static Drawable flip(Drawable drawable, FlipDirection flipDirection) {
+        if (drawable == null) {
+            return null;
+        }
+        Bitmap in = ((BitmapDrawable) drawable).getBitmap();
+        return new BitmapDrawable(Resources.getSystem(), flip(in, flipDirection));
+    }
 
     public static Bitmap flip(Bitmap input, FlipDirection flipDirection) {
         Bitmap output = null;
