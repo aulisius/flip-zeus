@@ -14,22 +14,11 @@
 
 <sub>Why would you use this though !?!?!</sub>
 
-Add the link to jitpack in your root `build.gradle`
-
-```
-allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
-}
-```
-
-Then, in your app's `build.gradle`
+In your app's `build.gradle`
 
 ```
 dependencies {
-    compile 'com.github.aulisius:flip-zeus:0.0.1'
+    compile 'com.github.flipzeus:flipzeus:0.0.1'
 }
 ```
 
